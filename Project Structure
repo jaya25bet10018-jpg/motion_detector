@@ -1,0 +1,20 @@
+motion-detection-python/
+│
+├── motion_detection.py        # Main Python script containing the motion detection logic
+├── background_subtraction.py  # (Optional) Module handling background modeling
+├── utils.py                   # Helper functions for masking, contour detection, etc.
+│
+├── assets/
+│   ├── sample_frame.jpg       # Example frame or captured image
+│   ├── README_image.jpg       # Image used in documentation
+│   └── icon.png               # App icon or UI resources (if any)
+│
+├── data/
+│   ├── logs.txt               # Stores motion timestamps (if logging enabled)
+│   └── config.json            # Configuration file for thresholds/settings
+│
+├── screenshots/
+│   └── occupied.jpg           # Demo image (uploaded file)
+│
+├── README.md                  # Documentation for the project
+└── requirements.txt           # List of Python dependencies
