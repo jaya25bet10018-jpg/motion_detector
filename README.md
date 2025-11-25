@@ -1,34 +1,41 @@
-This project is a simple motion detection system designed to identify movement in front of a camera and respond to it in real time. The main goal is to create an easy-to-understand solution that can be used for security, automation, or basic computer-vision learning.
+Project Title--Real-Time Motion Detection and Occupancy Monitoring Using Python
+ #Overview of the Project
+This project is a real-time motion detection and occupancy monitoring system built using Python and OpenCV. It captures live video using a webcam, detects motion by comparing video frames, and highlights detected motion areas with bounding boxes. A binary mask (foreground mask) is also generated to visually represent detected movement.
+The system determines whether the room is occupied based on motion and displays the status on the video feed. This project demonstrates essential concepts of computer vision such as frame differencing, thresholding, contour detection, and background subtraction.
+A sample screenshot from the project execution is shown below:
 
-#Features
-Real-time video capture and frame processing
-Automatic motion detection using frame differencing
-Grayscale conversion and Gaussian smoothing for noise reduction
-Status text updates (e.g., "Occupied" / "Unoccupied")
-Records timestamps of detected motion
-Lightweight and easy to extend for security applications
+#Features:-
+Real-time motion detection using webcam feed
+Background subtraction for isolating moving objects
+Binary mask visualization of detected motion
+Red bounding boxes drawn around detected motion regions
+Automatic room occupancy detection
+Lightweight and easy to understand
+Extensible for security systems or gesture-based applications
+#Tools Used:-
+Python 3.x
+OpenCV (cv2)
+NumPy
+IDE: PyCharm / VS Code (optional)
+Webcam (built-in or external)
 
- #Tools Used:-
-Python 3
-OpenCV (cv2) – image processing & video capture
-imutils – frame resizing & basic utilities
-datetime – timestamp generation
-time – controlling frame processing
+#Steps to Install & Run the Project
+Clone the Repository
+git clone https://github.com/yourusername/motion-detection-python.git
+cd motion-detection-python
 
-Steps to Install & Run the Project
-1. Clone or Download the Project
-   git clone https://github.com/yourusername/motion-detector.git
-   cd motion-detector
-2. Install Required Libraries:-
-   pip install opencv-python imutils
-3. Run the Script:-
-   python motion_detector.py
-4. Exit:-
-   Press Q to quit the live window.
-
-Instructions for Testing
-Ensure your laptop/PC webcam is connected and functioning.
-Start the program and stay out of the frame for the first few seconds — this helps the system capture the reference frame.
-Move your hand or walk in front of the camera to generate motion.
-The system will display changes and update the status accordingly.
-Check the console or list for timestamps of when motion occurred.
+#Install Required Dependencies
+pip install opencv-python numpy
+Run the Project
+python motion_detection.py
+Ensure your webcam is connected and accessible.
+#Instructions for Testing
+To test the motion detection system:
+Start the program — the webcam feed will open.
+Move your hand or any object in front of the camera.
+You should see:
+Red bounding boxes around moving areas
+White foreground mask in the processing window
+Room Status: Occupied displayed when motion is detected
+Stay still — the system should detect no motion and update accordingly.
+Test in different lighting conditions to observe accuracy.
