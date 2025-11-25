@@ -1,0 +1,30 @@
+motion_detection.py
+Main script implementing:
+Webcam access
+Frame differencing
+Thresholding & binary mask generation
+Contour detection
+Bounding box drawing
+Room occupancy detection display
+
+#background_subtraction.py:
+Contains optional background modeling logic using OpenCV’s background subtractors.
+
+#utils.py:
+Includes helper functions such as:
+Mask cleaning
+Frame preprocessing
+Contour filtering
+
+#data/config.json
+Stores adjustable configuration values:
+Threshold levels
+Minimum contour area
+Sensitivity values
+
+#data/logs.txt
+Used to store timestamps or events when motion is detected.
+
+#Assets & screenshots
+Includes reference images, demo outputs, or GUI icons used in documentation or testing as uploaded in project report.
+
